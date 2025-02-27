@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav
+        {
+           height: auto;
+           width: 200px;
+           font-size: 40px;
+           background-color: lightgreen;
+           margin: auto;
+        }
+        #nav ul li{
+            list-style-type:none;
+            width: 200px;
+        }
+        #nav ul li a{
+            color: blue;
+            text-decoration: none;
+            padding-left: 30px;
+            padding-right: 30px;
+            line-height: 50px;
+            border-bottom: solid 1px blue;
+            display: block;
+        }
+        .home{
+            background-image:url('img/home.png');
+            background-repeat:no-repeat;
+            background-position:left;
+        }
+        .about{
+            background-image:url('img/about.png');
+            background-repeat:no-repeat;
+            background-position:left;
+        }
+        .contact{
+            background-image:url('img/contact.png');
+            background-repeat:no-repeat;
+            background-position:left;
+        }
+        #nav ul li a:hover
+        {
+            background-color:black;
+            color:white;
+        }
+
+    }
+
+    </style>
+</head>
+<body>
+    <div id="nav"> 
+    <ul>
+        <li><a href="#" class="home">Home</a></li>
+        <li><a href="#" class="about">About</a></li>
+        <li><a href="#" class="contact">Contact</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

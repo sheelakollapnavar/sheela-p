@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style>
+        canvas{
+            border: solid 1px ;
+        }
+    </style>
+</head>
+<body>
+    <p>Default canvas</p>
+    <canvas></canvas>
+    <p> Custom canvas(200*200)</p>
+    <canvas width="200" height="200" id="rect"></canvas>
+    <script>
+        var a=document.getElementById("rect");
+        var b=a.getContext("2d");
+        b.beginPath();
+        b.fillstyle ="gray";
+        b.fillRect(50,50,100,100);
+        b.fill();
+
+
+        
+        b.beginPath();
+        b.globalAlpha =0.5;
+        b.fillstyle ="green";
+        b.fillRect(75,75,100,100);
+        b.fill();
+
+        b.beginPath();
+        b.globalAlpha =0.5;
+        b.fillstyle ="green";
+        b.fillRect(25,25,100,100);
+        b.fill();
+
+
+        b.beginPath();
+        b.globalAlpha =0.5;
+        b.fillstyle ="green";
+        b.fillRect(100,100,100,100);
+        b.fill();
+    </script>
+
+    <p>Custom canvas(200*200)</p>
+    <canvas width="200" height="200" id="circle"></canvas>
+    <script>
+        var a=document.getElementById("circle");
+        var b=a.getContext("2d");
+        b.beginPath();
+        b.fillStyle="blue";
+        b.arc(100,100,40,0,2*3.142);
+        b.fill();
+    </script>
+
+<p>Custom canvas(200*200)</p>
+<canvas width="200" height="200" id="line"></canvas>
+<script>
+    var a=document.getElementById("line");
+    var b=a.getContext("2d");
+    b.beginPath();
+    b.moveTo(0,0);
+    b.lineTo(200,200);
+
+    b.moveTo(0,100);
+    b.lineTo(200,100);
+
+    b.moveTo(100,200);
+    b.lineTo(100,0);
+
+    b.moveTo(0,200);
+    b.lineTo(200,0);
+    b.stroke();
+    b.beginPath();
+
+    
+    b.fillstyle="blue"   
+    b.arc(100,100,40,0,2*3.142);
+    b.fill();
+     
+   
+    
+    
+
+    
+
+    
+</script>
+    
+
+</body>
+</html>

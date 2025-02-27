@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zindex</title>
+    <style>
+        #box{
+            height: 500px;
+            width: 500px;
+            border: solid 1px blue;
+            margin: auto;
+            position: relative;
+        }
+        #one{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(236,27,27,0.5);
+            position: absolute;
+            left:20px;
+            top: 20px;
+            z-index: 3;
+
+        }
+        #two{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            position: absolute;
+            left: 120px;
+            top: 120px;
+        }
+        #three{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            position: absolute;
+            left: 220px;
+            top: 240px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+    
+</body>
+</html>
